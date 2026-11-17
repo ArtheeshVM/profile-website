@@ -272,10 +272,11 @@ section {
 
 /* ---------- Footer ---------- */
 .footer {
-  padding: var(--spacing-lg);
-  text-align: center;
+  position: relative;
+  padding: var(--spacing-xl) var(--spacing-lg);
   background: var(--color-primary-dark);
   color: var(--color-text-inverse);
+  text-align: center;
 }
 
 /* ---------- Animations ---------- */
@@ -926,7 +927,6 @@ section {
   align-items: center;
   justify-content: center;
   padding: var(--spacing-lg);
-  background: var(--color-primary-dark);
   background: var(--color-lightbox-overlay);
 }
 
@@ -962,14 +962,6 @@ section {
 /* ========================================
    FOOTER
 ======================================== */
-
-.footer {
-  position: relative;
-  padding: var(--spacing-xl) var(--spacing-lg);
-  background: var(--color-primary-dark);
-  color: var(--color-text-inverse);
-  text-align: center;
-}
 
 .footer-container {
   max-width: var(--max-width);
