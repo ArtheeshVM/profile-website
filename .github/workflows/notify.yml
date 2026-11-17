@@ -1,0 +1,37 @@
+name: Workflow Notification
+
+on:
+  workflow_run:
+    workflows:
+      - Validate HTML & CSS
+      - Pull Request Checks
+      - Deploy to GitHub Pages
+      - Lighthouse Performance Audit
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Report Workflow Status
+        env:
+          WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
+          BRANCH_NAME: ${{ github.event.workflow_run.head_branch }}
+          WORKFLOW_STATUS: ${{ github.event.workflow_run.conclusion }}
+          COMMIT_ID: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          echo "## Workflow Notification" >> "$GITHUB_STEP_SUMMARY"
+          echo "Workflow: $WORKFLOW_NAME" >> "$GITHUB_STEP_SUMMARY"
+          echo "Branch: $BRANCH_NAME" >> "$GITHUB_STEP_SUMMARY"
+          echo "Status: $WORKFLOW_STATUS" >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: $COMMIT_ID" >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$WORKFLOW_STATUS" = "success" ]; then
+            echo "Result: Workflow completed successfully." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Result: Workflow did not complete successfully." >> "$GITHUB_STEP_SUMMARY"
+          fi
