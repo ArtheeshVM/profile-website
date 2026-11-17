@@ -3,12 +3,434 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Profile</title>
+  <title>Artheesh | Profile</title>
+  <meta name="description" content="Explore Artheesh's professional journey, interests, family and hobbies.">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Hello, world</h1>
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">Artheesh</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        &#9776;
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <img src="images/hero/profile.png" alt="Portrait of Artheesh" class="hero-photo">
+        <p class="hero-eyebrow">Welcome to my story</p>
+        <h1>ARTHEESH</h1>
+        <p class="hero-tagline">Graduate Trainee (Software Engineer) | Psiog Digital</p>
+        <div class="hero-divider"></div>
+        <a href="#journey" class="btn">Explore My Journey &rarr;</a>
+      </div>
+      <a href="#journey" class="scroll-hint" aria-label="Scroll down"><span>&#8595;</span></a>
+    </section>
+
+  <section id="journey" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Professional Journey</h2>
+    <p class="section-description reveal">
+      My journey of learning, growing and building my career.
+    </p>
+
+    <div class="timeline">
+
+      <article class="timeline-item reveal">
+        <div class="timeline-content">
+          <span class="timeline-date">2026 – Present</span>
+          <h3>Graduate Trainee</h3>
+          <h4>PSIog</h4>
+          <p>
+            Beginning my professional journey, developing technical skills
+            and gaining practical experience in the software industry.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <span class="timeline-date">2022 – 2026</span>
+        <div class="timeline-content">
+          <h3>B.E. Computer Science and Engineering</h3>
+          <h4>Karpagam College of Engineering</h4>
+          <p>Graduated in 2026.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <section id="interests" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Things That Make Me, Me!</h2>
+    <p class="section-description reveal">
+      A few things I take very seriously... especially food!
+    </p>
+
+    <div class="interest-grid">
+
+      <!-- Music -->
+      <article class="interest-card reveal">
+        <div class="interest-icon">🎵</div>
+        <h3>Music</h3>
+        <p><strong>Favourite Artists:</strong> Vijay Antony &amp; Hip Hop Tamizha</p>
+        <p><strong>Favourite Genres:</strong> Love and Kuthu</p>
+        <p class="funny-line">
+          Love songs for the feelings, kuthu songs for the healing!
+        </p>
+      </article>
+
+      <!-- Movies -->
+      <article class="interest-card movie-card reveal">
+        <div class="interest-icon">🎬</div>
+        <h3>My Top 5 Movies &amp; Series</h3>
+        <p class="funny-line">
+          My ranking. Arguments are welcome, but my list stays!
+        </p>
+
+        <div class="movie-grid">
+
+          <div class="movie-poster">
+            <img src="images/movies/thuppakki.jpg" alt="Thuppakki poster">
+            <span>#1</span>
+            <h4>Thuppakki</h4>
+          </div>
+
+          <div class="movie-poster">
+            <img src="images/movies/mersal.jpg" alt="Mersal poster">
+            <span>#2</span>
+            <h4>Mersal</h4>
+          </div>
+
+          <div class="movie-poster">
+            <img src="images/movies/avengers.jpg" alt="Avengers poster">
+            <span>#3</span>
+            <h4>Avengers</h4>
+          </div>
+
+          <div class="movie-poster">
+            <img src="images/movies/fast_and_furious.jpg" alt="Fast and Furious poster">
+            <span>#4</span>
+            <h4>Fast &amp; Furious</h4>
+          </div>
+
+          <div class="movie-poster">
+            <img src="images/movies/money_heist.jpg" alt="Money Heist poster">
+            <span>#5</span>
+            <h4>Money Heist</h4>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Food -->
+      <article class="interest-card reveal">
+        <div class="interest-icon">🍗</div>
+        <h3>Food</h3>
+        <p><strong>Favourite:</strong> Non-veg Biryani</p>
+        <p><strong>Also love:</strong> Arisi Paruppu Sadam</p>
+        <p class="funny-line">
+          Calories don't count when the food is this good!
+        </p>
+      </article>
+
+      <!-- Travel -->
+      <article class="interest-card reveal">
+        <div class="interest-icon">✈️</div>
+        <h3>Travel</h3>
+        <p><strong>Dream Destination:</strong> Switzerland , Paris</p>
+        <p class="funny-line">
+          Mentally in Switzerland. Financially still planning the trip!
+        </p>
+      </article>
+
+      <!-- Sports -->
+      <article class="interest-card reveal">
+        <div class="interest-icon">🏏</div>
+        <h3>Sports</h3>
+        <p><strong>Favourite Sport:</strong> Cricket</p>
+        <p class="funny-line">
+          Every cricket match comes with my expert-level commentary!
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="family" class="section family-section">
+  <div class="container">
+
+    <h2 class="section-title reveal">My Family ❤️</h2>
+
+    <p class="section-description reveal">
+      My favourite people, my biggest strength and my forever team.
+    </p>
+
+    <div class="family-grid">
+
+
+<!-- Father -->
+<article class="family-card reveal"
+         tabindex="0"
+         role="button"
+         aria-label="Flip Velmurugan's family card">
+  <div class="family-card-inner">
+    <div class="family-card-front">
+      <img src="images/family/father.jpeg" alt="Illustration of a father">
+      <h3>Velmurugan</h3>
+      <p>My Father ❤️</p>
+      <span>Hover to discover</span>
+    </div>
+    <div class="family-card-back">
+      <h3>My First Hero</h3>
+      <p>My lifelong guide and permanent financial advisor! 😂</p>
+    </div>
+  </div>
+</article>
+
+<!-- Mother -->
+<article class="family-card reveal"
+         tabindex="0"
+         role="button"
+         aria-label="Flip Velmurugan's family card">
+  <div class="family-card-inner">
+    <div class="family-card-front">
+      <img src="images/family/Mother.jpeg" alt="Illustration of a mother">
+      <h3>Muthulakshmi</h3>
+      <p>My Mother ❤️</p>
+      <span>Hover to discover</span>
+    </div>
+    <div class="family-card-back">
+      <h3>My Forever Support</h3>
+      <p>The only person who knows something is wrong even when I say "I'm fine".</p>
+    </div>
+  </div>
+</article>
+
+<!-- Sister -->
+<article class="family-card reveal"
+         tabindex="0"
+         role="button"
+         aria-label="Flip Velmurugan's family card">
+  <div class="family-card-inner">
+    <div class="family-card-front">
+      <img src="images/family/sister.jpeg" alt="Illustration of a sister">
+      <h3>Harshitha</h3>
+      <p>My Sister 😂</p>
+      <span>Hover to discover</span>
+    </div>
+    <div class="family-card-back">
+      <h3>My Favourite Headache</h3>
+      <p>My partner in crime, occasional enemy and forever favourite headache!</p>
+    </div>
+  </div>
+</article>
+
+<!-- Grandparents -->
+<article class="family-card reveal"
+         tabindex="0"
+         role="button"
+         aria-label="Flip Velmurugan's family card">
+  <div class="family-card-inner">
+    <div class="family-card-front">
+      <img src="images/family/grandparents.jpeg" alt="Illustration of grandparents">
+      <h3>Subramani &amp; Vijayalakshmi</h3>
+      <p>My Grandparents ❤️</p>
+      <span>Hover to discover</span>
+    </div>
+    <div class="family-card-back">
+      <h3>Our Family Roots</h3>
+      <p>The roots of our family, filled with stories, blessings and unconditional love.</p>
+    </div>
+  </div>
+</article>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="hobbies" class="section section-alt">
+  <div class="container">
+
+    <h2 class="section-title reveal">Hobbies &amp; Passions</h2>
+
+    <p class="section-description reveal">
+      Things I love, things I do and things I'm still planning to do!
+    </p>
+
+    <div class="hobby-grid">
+
+      <!-- Cooking -->
+      <article class="hobby-card reveal">
+        <div class="hobby-image">
+          <button class="hobby-image-button" type="button"
+                  aria-label="View cooking illustration">
+            <img src="images/hobbies/cooking.webp" alt="Illustration of cooking">
+          </button>
+        </div>
+        <div class="hobby-content">
+          <span class="hobby-number">01</span>
+          <h3>Cooking</h3>
+          <p>
+            I love cooking, especially after watching YouTube tutorials.
+          </p>
+          <p class="hobby-funny">
+            10 minutes watching, 2 hours imagining myself as a chef! 😂
+          </p>
+        </div>
+      </article>
+
+      <!-- Planting -->
+      <article class="hobby-card reveal">
+        <div class="hobby-image">
+          <button class="hobby-image-button" type="button"
+                  aria-label="View planting illustration">
+          <img src="images/hobbies/planting.webp" alt="Illustration of gardening">
+          </button>
+        </div>
+        <div class="hobby-content">
+          <span class="hobby-number">02</span>
+          <h3>Planting</h3>
+          <p>
+            I really want to grow plants and create my own little green space.
+          </p>
+          <p class="hobby-funny">
+            Green thumb loading... waiting for the right opportunity! 🌱
+          </p>
+        </div>
+      </article>
+
+      <!-- Pets -->
+      <article class="hobby-card reveal">
+        <div class="hobby-image">
+          <button class="hobby-image-button" type="button"
+                  aria-label="View pets illustration">
+          <img src="images/hobbies/pet.webp" alt="Illustration of pets">
+          </button>
+        </div>
+        <div class="hobby-content">
+          <span class="hobby-number">03</span>
+          <h3>Animal Lover</h3>
+          <p>
+            I already have fish and dream of having a dog, hamster and sugar glider.
+          </p>
+          <p class="hobby-funny">
+            Current pet parent: Fish. Future goal: Build a mini zoo! 🐠
+          </p>
+        </div>
+      </article>
+
+      <!-- Cricket -->
+      <article class="hobby-card reveal">
+        <div class="hobby-image">
+          <button class="hobby-image-button" type="button"
+                  aria-label="View cricket illustration">
+          <img src="images/hobbies/cricket.webp" alt="Illustration of cricket">
+          </button>
+        </div>
+        <div class="hobby-content">
+          <span class="hobby-number">04</span>
+          <h3>Cricket</h3>
+          <p>
+            Cricket is one of my favourite sports. I never miss a chance to enjoy a good match.
+          </p>
+          <p class="hobby-funny">
+            Watching from the sofa, coaching the players like a professional! 🏏
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Image Lightbox -->
+<div class="lightbox" id="hobby-lightbox" hidden>
+  <button class="lightbox-close" type="button"
+          aria-label="Close image">&times;</button>
+
+  <img class="lightbox-image" src="" alt="">
+</div>
+
+</main>
+
+
+<footer id="footer" class="footer">
+  <div class="footer-container">
+
+    <div class="footer-content">
+      <h2>Thanks for Visiting!</h2>
+      <p>
+        Every journey has a story. This is mine, and there's more to come.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#journey">Journey</a>
+      <a href="#interests">Interests</a>
+      <a href="#family">Family</a>
+      <a href="#hobbies">Hobbies</a>
+    </div>
+
+
+    <div class="footer-socials">
+
+      <a href="https://www.linkedin.com/in/artheesh/"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Visit my LinkedIn profile">
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/ArtheeshVM"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Visit my GitHub profile">
+        GitHub
+      </a>
+
+      <a href="mailto:artheesh.velmurugan@psiog.com"
+        aria-label="Send me an email">
+        Email Me
+      </a>
+
+    </div>
+
+
+    <p class="footer-copyright">
+      &copy; 2026 Artheesh. Made with love ❤️ and lots of learning.
+    </p>
+
+  </div>
+
+  <button class="back-to-top" id="back-to-top"
+          aria-label="Back to top">
+    &uarr;
+  </button>
+</footer>
+
+
   <script src="js/main.js"></script>
 </body>
 </html>
