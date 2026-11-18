@@ -1,27 +1,26 @@
-
 :root {
   /* Primary Colors */
-  --color-primary: #315a45;
-  --color-primary-light: #47745b;
-  --color-primary-dark: #203b2d;
+  --color-primary: #1b2a41;
+  --color-primary-light: #324a5f;
+  --color-primary-dark: #0c1821;
 
   /* Background Colors */
-  --color-bg: #14251f;
-  --color-bg-secondary: #1d332a;
-  --color-bg-card: #294238;
-  --color-nav-bg: rgba(20, 37, 31, 0.96);
+  --color-bg: #fbf8f3;
+  --color-bg-secondary: #f1ebe0;
+  --color-bg-card: #ffffff;
+  --color-nav-bg: rgba(251, 248, 243, 0.92);
 
   /* Text Colors */
-  --color-text: #f4f0e4;
-  --color-text-secondary: #c4d0c5;
-  --color-text-inverse: #f8f5ed;
+  --color-text: #2b2b2b;
+  --color-text-secondary: #6b6459;
+  --color-text-inverse: #fbf8f3;
 
   /* Accent & Borders */
-  --color-accent: #c09a5b;
-  --color-accent-dark: #9c7844;
-  --color-border: #496454;
-  --color-shadow: rgba(0, 0, 0, 0.28);
-  --color-hero-glow: rgba(192, 154, 91, 0.16);
+  --color-accent: #b8923a;
+  --color-accent-dark: #9a7728;
+  --color-border: #e4dccb;
+  --color-shadow: rgba(12, 24, 33, 0.15);
+  --color-hero-glow: rgba(184, 146, 58, 0.25);
 
   /* Typography */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,25 +40,17 @@
   --border-radius: 8px;
   --transition-speed: 0.3s;
 
-  /* Personal Likings */
-  --color-interest-decoration: rgba(232, 222, 202, 0.13);
-  --color-interest-icon-bg: rgba(232, 222, 202, 0.12);
-  --color-interest-divider: rgba(232, 222, 202, 0.28);
-  --color-interest-highlight: #d9c18b;
-  --color-movie-title-bg: #20372d;
-  --color-movie-title: #f4f0e4;
+    /* Personal Likings */
+  --color-interest-decoration: rgba(255, 255, 255, 0.12);
+  --color-interest-icon-bg: rgba(255, 255, 255, 0.12);
+  --color-interest-divider: rgba(255, 255, 255, 0.2);
 
   /* Family Section */
-  --color-family-bg: #29382d;
-  --color-family-card: #384a3b;
-  --color-family-accent: #d6b77a;
-  --color-family-text: #f2eadb;
-  --color-family-heading: #f4f0e4;
-
-  /* Section Headings */
-  --color-section-heading: #f4f0e4;
-  --color-hobby-heading: #f4f0e4;
+  --color-family-bg: #f2e5d5;
+  --color-family-card: #fffaf2;
+  --color-family-accent: #9b704d;
+  --color-family-text: #513c2e;
 
   /* Lightbox */
-  --color-lightbox-overlay: rgba(8, 18, 13, 0.94);
+  --color-lightbox-overlay: rgba(12, 24, 33, 0.92);
 }
