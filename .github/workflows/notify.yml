@@ -15,14 +15,16 @@ permissions:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    env:
+      WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
+      BRANCH_NAME: ${{ github.event.workflow_run.head_branch }}
+      WORKFLOW_STATUS: ${{ github.event.workflow_run.conclusion }}
+      COMMIT_ID: ${{ github.event.workflow_run.head_sha }}
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
     steps:
       - name: Report Workflow Status
-        env:
-          WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
-          BRANCH_NAME: ${{ github.event.workflow_run.head_branch }}
-          WORKFLOW_STATUS: ${{ github.event.workflow_run.conclusion }}
-          COMMIT_ID: ${{ github.event.workflow_run.head_sha }}
         run: |
           echo "## Workflow Notification" >> "$GITHUB_STEP_SUMMARY"
           echo "Workflow: $WORKFLOW_NAME" >> "$GITHUB_STEP_SUMMARY"
@@ -35,3 +37,25 @@ jobs:
           else
             echo "Result: Workflow did not complete successfully." >> "$GITHUB_STEP_SUMMARY"
           fi
+
+      - name: Notify Slack on success
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL is not set, skipping Slack message."
+            exit 0
+          fi
+          curl -sS -X POST -H 'Content-type: application/json' \
+            --data "$(jq -n --arg text ":white_check_mark: $WORKFLOW_NAME succeeded on $BRANCH_NAME - $RUN_URL" '{text: $text}')" \
+            "$SLACK_WEBHOOK_URL"
+
+      - name: Notify Slack on failure
+        if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL is not set, skipping Slack message."
+            exit 0
+          fi
+          curl -sS -X POST -H 'Content-type: application/json' \
+            --data "$(jq -n --arg text ":x: $WORKFLOW_NAME FAILED on $BRANCH_NAME - $RUN_URL" '{text: $text}')" \
+            "$SLACK_WEBHOOK_URL"

@@ -250,7 +250,7 @@ section {
 .hero-description {
   max-width: 620px;
   margin: 0.75rem 0 0;
-  color: var(--color-text-secondary);
+    color: var(--color-hero-text);
   font-size: 0.95rem;
   line-height: 1.7;
   text-align: left;
@@ -723,7 +723,7 @@ section {
 .movie-poster h4 {
   padding: var(--spacing-md) var(--spacing-sm);
   background: var(--color-bg-secondary);
-  color: var(--color-section-heading);
+  color: var(--color-movie-title);
   text-align: center;
   font-size: 0.95rem;
 }

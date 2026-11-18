@@ -11,9 +11,12 @@
   --color-nav-bg: rgba(18, 29, 38, 0.96);
 
   /* Text Colors */
+
   --color-text: #f3f0e8;
   --color-text-secondary: #c0c7ca;
   --color-text-inverse: #f8f5ed;
+  --color-hero-text: #e8e2d6;
+
 
   /* Accent & Borders */
   --color-accent: #a98245;
@@ -40,10 +43,13 @@
   --border-radius: 8px;
   --transition-speed: 0.3s;
 
+
   /* Personal Likings */
   --color-interest-decoration: rgba(232, 222, 202, 0.13);
   --color-interest-icon-bg: rgba(232, 222, 202, 0.12);
   --color-interest-divider: rgba(232, 222, 202, 0.28);
+  --color-movie-title: #f3f0e8;
+
 
   /* Family Section */
   --color-family-bg: #302c27;
