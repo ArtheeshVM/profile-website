@@ -14,6 +14,7 @@
   --color-text: #2b2b2b;
   --color-text-secondary: #6b6459;
   --color-text-inverse: #fbf8f3;
+  --color-hero-text: #e8e2d6;
 
   /* Accent & Borders */
   --color-accent: #b8923a;
@@ -44,6 +45,7 @@
   --color-interest-decoration: rgba(255, 255, 255, 0.12);
   --color-interest-icon-bg: rgba(255, 255, 255, 0.12);
   --color-interest-divider: rgba(255, 255, 255, 0.2);
+  --color-movie-title: #1b2a41;
 
   /* Family Section */
   --color-family-bg: #f2e5d5;
