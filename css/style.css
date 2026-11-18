@@ -619,7 +619,7 @@ section {
 .movie-poster h4 {
   padding: var(--spacing-md) var(--spacing-sm);
   background: var(--color-bg-secondary);
-  color: var(--color-primary);
+  color: var(--color-section-heading);
   text-align: center;
   font-size: 0.95rem;
 }
@@ -859,7 +859,7 @@ section {
 
 .hobby-content h3 {
   margin: var(--spacing-sm) 0;
-  color: var(--color-primary);
+  color: var(--color-section-heading);
   font-size: 1.5rem;
 }
 
@@ -1045,4 +1045,74 @@ a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 4px;
+}
+
+
+/* ========================================
+   DARK THEME TEXT CONTRAST FIXES
+======================================== */
+
+
+/* Professional Journey - Dark Theme */
+#journey {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+#journey .section-title {
+  color: var(--color-section-heading);
+}
+
+#journey .section-description {
+  color: var(--color-text-secondary);
+}
+
+#journey .timeline {
+  border-color: var(--color-border);
+}
+
+#journey .timeline-content {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+#journey .timeline-content h3 {
+  color: var(--color-text);
+}
+
+#journey .timeline-content h4 {
+  color: var(--color-text-secondary);
+}
+
+#journey .timeline-content p {
+  color: var(--color-text-secondary);
+}
+
+#journey .timeline-date {
+  color: var(--color-interest-highlight);
+}
+
+#journey .timeline-item::before {
+  background: var(--color-accent);
+  border-color: var(--color-bg);
+}
+
+
+/* ========================================
+   FINAL DARK THEME TEXT VISIBILITY FIX
+======================================== */
+/* Personal Likings - Section Heading */
+#interests .section-title {
+  color: var(--color-section-heading);
+}
+
+/* Family - Section Heading */
+.family-section .section-title {
+  color: var(--color-section-heading);
+}
+
+/* Hobbies - Section Heading */
+#hobbies .section-title {
+  color: var(--color-section-heading);
 }
